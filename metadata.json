@@ -1,0 +1,6 @@
+{
+  "name": "Samajh (سمجھ) — Urdu-First Document Helper",
+  "description": "Urdu-first, privacy-first document explainer for utility bills and official notices with client-side EXIF stripping, magic-byte validation, and zero storage.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

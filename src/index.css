@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --font-urdu: 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', serif;
+  --font-sans: 'Plus Jakarta Sans', 'Noto Naskh Arabic', 'Noto Nastaliq Urdu', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Noto Naskh Arabic', ui-monospace, SFMono-Regular, monospace;
+}
+
+html[lang="ur"] body {
+  font-family: var(--font-urdu);
+  line-height: 2.25;
+}
+
+html[lang="ur"] h1 {
+  line-height: 2.35 !important;
+}
+
+html[lang="ur"] h2,
+html[lang="ur"] h3,
+html[lang="ur"] h4,
+html[lang="ur"] p,
+html[lang="ur"] li {
+  line-height: 2.2 !important;
+}
+
+html[lang="en"] body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+  line-height: 2.25 !important;
+}
+
+.font-sans-ui {
+  font-family: var(--font-sans);
+  line-height: 1.8;
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+  header,
+  #model-router,
+  #security-principles {
+    display: none !important;
+  }
+}
